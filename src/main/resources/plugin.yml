@@ -1,0 +1,4 @@
+name: react
+version: '0.1'
+main: com.redstonelabs.react.Main
+api-version: '1.21'
