@@ -3,10 +3,9 @@ on:
   push:
     branches: [main]
   pull_request:
-    # The branches below must be a subset of the branches above
     branches: [main]
   schedule:
-    - cron: '0 0 * * 0'  # Runs weekly at midnight on Sunday
+    - cron: '0 0 * * 0'
 
 jobs:
   analyze:
@@ -20,6 +19,8 @@ jobs:
         uses: github/codeql-action/init@v2
         with:
           languages: kotlin
+          # Specify the directory you want to scan
+          paths: src/main/kotlin
 
       - name: Build using Maven
         run: mvn clean install
