@@ -7,7 +7,7 @@ class Main : JavaPlugin() {
 
     override fun onEnable() {
         // Plugin startup logic
-        logger.info("This is a test message! :D")
+        logger.info("This is a test message!")
     }
 
     override fun onDisable() {
