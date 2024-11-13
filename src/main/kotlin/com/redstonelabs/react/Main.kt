@@ -1,6 +1,5 @@
 package com.redstonelabs.react
 
-import org.bukkit.Bukkit
 import org.bukkit.plugin.java.JavaPlugin
 
 class Main : JavaPlugin() {
